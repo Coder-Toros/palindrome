@@ -8,11 +8,7 @@ function isPalindrome(str) {
     .reverse()
     .join('');
 
-  if (reversedStr === str.replaceAll(' ', '').toLowerCase()) {
-    return true;
-  }
-
-  return false;
+  return reversedStr === str.replaceAll(' ', '').toLowerCase();
 }
 
 console.log(isPalindrome('Аргентина МаНит негРа'));
